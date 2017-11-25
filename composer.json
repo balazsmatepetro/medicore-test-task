@@ -1,0 +1,26 @@
+{
+    "name": "petrobalazsmate/medicore-test-task",
+    "description": "Medicore Test Task",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Balázs Máté Petró",
+            "email": "petrobalazsmate@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Medicore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Medicore\\Test\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    }
+}
