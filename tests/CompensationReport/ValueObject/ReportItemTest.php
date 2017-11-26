@@ -74,6 +74,6 @@ class ReportItemTest extends TestCase
 
     public function testGetPaymentDateReturnsProperValue()
     {
-        $this->assertEquals($this->reportDate->format('Y-m-d H:i:s'), $this->reportItem->getPaymentDate());
+        $this->assertEquals($this->reportDate->format('Y-m-d'), $this->reportItem->getPaymentDate());
     }
 }

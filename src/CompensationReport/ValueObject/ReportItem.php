@@ -92,6 +92,6 @@ final class ReportItem implements ReportItemInterface
      */
     public function getPaymentDate() : string
     {
-        return $this->paymentDate->format('Y-m-d H:i:s');
+        return $this->paymentDate->format('Y-m-d');
     }
 }
