@@ -8,7 +8,7 @@ use DateTimeInterface;
 
 /**
  * Description of PaymentDateInterface
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 interface PaymentDateInterface

@@ -10,7 +10,7 @@ use League\Flysystem\File;
 
 /**
  * Description of WriterInterface
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 interface WriterInterface

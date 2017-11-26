@@ -6,7 +6,7 @@ namespace Medicore\Transport\Contract;
 
 /**
  * Description of TransportInterface
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 interface TransportInterface
@@ -20,7 +20,7 @@ interface TransportInterface
 
     /**
      * Returns the compensation value of transport.
-     * 
+     *
      * @return float
      */
     public function getCompensation() : float;

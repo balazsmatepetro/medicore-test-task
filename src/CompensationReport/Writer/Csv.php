@@ -18,7 +18,7 @@ use Medicore\CompensationReport\Contract\Writer\WriterInterface;
 
 /**
  * Description of Csv
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 final class Csv implements WriterInterface
@@ -49,15 +49,13 @@ final class Csv implements WriterInterface
 
         $csv = Writer::createFromFileObject(new SplTempFileObject);
 
-        foreach ($reportItems as $reportItem)
-        {
+        foreach ($reportItems as $reportItem) {
             $this->writeLine($reportItem, $csv);
         }
 
         $filename = $this->createFileName();
 
-        if (!$this->filesystem->write($filename, $csv->getContent()))
-        {
+        if (!$this->filesystem->write($filename, $csv->getContent())) {
             throw new Exception('The file couldn\'t be written!');
         }
 
@@ -82,10 +80,8 @@ final class Csv implements WriterInterface
      */
     private function validateReportItems(array $reportItems)
     {
-        foreach ($reportItems as $reportItem)
-        {
-            if (!is_object($reportItem) || !($reportItem instanceof ReportItemInterface))
-            {
+        foreach ($reportItems as $reportItem) {
+            if (!is_object($reportItem) || !($reportItem instanceof ReportItemInterface)) {
                 throw new InvalidArgumentException('All items must be instance of ' . ReportItemInterface::class);
             }
         }

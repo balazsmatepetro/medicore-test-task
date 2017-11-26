@@ -6,7 +6,7 @@ namespace Medicore\Transport;
 
 /**
  * Description of Bike
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 final class Bike extends AbstractTransport

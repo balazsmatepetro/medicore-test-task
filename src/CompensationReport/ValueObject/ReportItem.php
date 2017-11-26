@@ -10,7 +10,7 @@ use Medicore\Employee\Contract\Entity\EmployeeInterface;
 
 /**
  * Description of ReportItem
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 final class ReportItem implements ReportItemInterface

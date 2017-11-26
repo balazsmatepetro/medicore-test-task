@@ -11,7 +11,7 @@ use Medicore\Transport\Contract\TransportInterface;
 
 /**
  * Description of Employee
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 final class Employee implements EmployeeInterface

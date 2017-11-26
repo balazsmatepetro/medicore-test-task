@@ -6,7 +6,7 @@ namespace Medicore\Transport;
 
 /**
  * Description of PublicTransport
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 abstract class PublicTransport extends AbstractTransport

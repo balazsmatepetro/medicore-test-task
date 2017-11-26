@@ -8,7 +8,7 @@ use Medicore\Employee\Contract\Entity\EmployeeInterface;
 
 /**
  * Description of EmployeeRepositoryInterface
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 interface EmployeeRepositoryInterface

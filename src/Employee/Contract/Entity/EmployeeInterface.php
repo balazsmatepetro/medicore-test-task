@@ -8,7 +8,7 @@ use Medicore\Transport\Contract\TransportInterface;
 
 /**
  * Description of EmployeeInterface
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 interface EmployeeInterface

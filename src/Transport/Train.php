@@ -6,7 +6,7 @@ namespace Medicore\Transport;
 
 /**
  * Description of Train
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 final class Train extends PublicTransport

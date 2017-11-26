@@ -10,7 +10,7 @@ use Medicore\Transport;
 
 /**
  * Description of InMemory
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 final class InMemory implements EmployeeRepositoryInterface

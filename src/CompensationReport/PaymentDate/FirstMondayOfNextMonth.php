@@ -10,7 +10,7 @@ use Medicore\CompensationReport\Contract\PaymentDate\PaymentDateInterface;
 
 /**
  * Description of FirstMondayOfNextMonth
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 final class FirstMondayOfNextMonth implements PaymentDateInterface

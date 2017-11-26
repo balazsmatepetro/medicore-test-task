@@ -8,7 +8,7 @@ use DateTimeInterface;
 
 /**
  * Description of ReportItemInterface
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 interface ReportItemInterface

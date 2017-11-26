@@ -6,7 +6,7 @@ namespace Medicore\Transport;
 
 /**
  * Description of Car
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 final class Car extends AbstractTransport
