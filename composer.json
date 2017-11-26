@@ -9,7 +9,9 @@
             "email": "petrobalazsmate@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "beberlei/assert": "^2.7"
+    },
     "autoload": {
         "psr-4": {
             "Medicore\\": "src/"
