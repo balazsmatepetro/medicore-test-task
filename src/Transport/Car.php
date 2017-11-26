@@ -11,7 +11,11 @@ namespace Medicore\Transport;
  */
 final class Car extends AbstractTransport
 {
-    // TODO: Add docBlock!
+    /**
+     * The name of transport type.
+     *
+     * @var string
+     */
     const NAME = 'Car';
 
     /**
