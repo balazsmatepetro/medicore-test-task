@@ -16,9 +16,9 @@ class FirstMondayOfNextMonthTest extends TestCase
     /**
      * @dataProvider dataProviderGetDate
      */
-    public function testGetDate($reportMonth, $expectedDate)
+    public function testGetDate($reportDate, $expectedDate)
     {
-        $this->assertEquals($expectedDate, (new FirstMondayOfNextMonth($reportMonth))->getDate()->format('Y-m-d'));
+        $this->assertEquals($expectedDate, (new FirstMondayOfNextMonth)->getPaymentDate($reportDate)->format('Y-m-d'));
     }
 
     public function dataProviderGetDate()

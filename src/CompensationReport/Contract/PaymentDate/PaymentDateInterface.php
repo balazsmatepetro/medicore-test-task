@@ -14,9 +14,10 @@ use DateTimeInterface;
 interface PaymentDateInterface
 {
     /**
-     * Returns the payment date.
+     * Calculates and returns the payment date by the date of reporting.
      *
-     * @return DateTimeInterface
+     * @param DateTimeInterface $reportDate The date of reporting.
+     * @return DateTimeInterface The date of payment.
      */
-    public function getDate() : DateTimeInterface;
+    public function getPaymentDate(DateTimeInterface $reportDate) : DateTimeInterface;
 }

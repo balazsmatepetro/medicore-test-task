@@ -15,30 +15,19 @@ use Medicore\CompensationReport\Contract\PaymentDate\PaymentDateInterface;
  */
 final class FirstMondayOfNextMonth implements PaymentDateInterface
 {
-    // TODO: Add docBlock!
-    const DATE_FORMAT = 'Y-m-d';
-
     /**
-     * The reported month.
+     * The used date format.
      *
-     * @var DateTimeInterface
+     * @var string
      */
-    private $reportMonth;
-
-    /**
-     * @param DateTimeInterface $reportMonth The reported month.
-     */
-    public function __construct(DateTimeInterface $reportMonth)
-    {
-        $this->reportMonth = $reportMonth;
-    }
+    const DATE_FORMAT = 'Y-m-d';
 
     /**
      * @inheritDoc
      */
-    public function getDate() : DateTimeInterface
+    public function getPaymentDate(DateTimeInterface $reportDate) : DateTimeInterface
     {
-        $firstDayOfNextMonth = $this->getFirstDayOfNextMonth();
+        $firstDayOfNextMonth = $this->getFirstDayOfNextMonth($reportDate);
 
         if (1 === (int)$firstDayOfNextMonth->format('N')) {
             return $firstDayOfNextMonth;
@@ -52,9 +41,9 @@ final class FirstMondayOfNextMonth implements PaymentDateInterface
      *
      * @return DateTimeImmutable
      */
-    private function getFirstDayOfNextMonth()
+    private function getFirstDayOfNextMonth(DateTimeInterface $reportDate) : DateTimeImmutable
     {
-        return DateTimeImmutable::createFromFormat(self::DATE_FORMAT, $this->reportMonth->format(self::DATE_FORMAT))
+        return DateTimeImmutable::createFromFormat(self::DATE_FORMAT, $reportDate->format(self::DATE_FORMAT))
             ->modify('first day of next month');
     }
 }
