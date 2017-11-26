@@ -10,7 +10,9 @@
         }
     ],
     "require": {
-        "beberlei/assert": "^2.7"
+        "beberlei/assert": "^2.7",
+        "league/csv": "^9.0",
+        "league/flysystem": "^1.0"
     },
     "autoload": {
         "psr-4": {
