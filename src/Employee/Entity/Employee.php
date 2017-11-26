@@ -17,11 +17,11 @@ use Medicore\Transport\Contract\TransportInterface;
 final class Employee implements EmployeeInterface
 {
     /**
-     * The last name of employee.
+     * The first name of employee.
      *
      * @var string
      */
-    private $lastName;
+    private $firstName;
 
     /**
      * How the employee commutes to work.
@@ -40,16 +40,16 @@ final class Employee implements EmployeeInterface
     /**
      * Creates a new Employee instance.
      *
-     * @param string $lastName The last name of employee.
+     * @param string $firstName The first name of employee.
      * @param TransportInterface $transport How the employee commutes to work.
      * @param int $oneWayDistance The one way travelled distance.
      */
-    public function __construct(string $lastName, TransportInterface $transport, int $oneWayDistance)
+    public function __construct(string $firstName, TransportInterface $transport, int $oneWayDistance)
     {
-        Assertion::notBlank($lastName, 'The last name cannot be an empty string!');
+        Assertion::notBlank($firstName, 'The first name cannot be an empty string!');
         Assertion::greaterThan($oneWayDistance, 0, 'The one way distance cannot be less than 1!');
 
-        $this->lastName = $lastName;
+        $this->firstName = $firstName;
         $this->transport = $transport;
         $this->oneWayDistance = $oneWayDistance;
     }
@@ -57,9 +57,9 @@ final class Employee implements EmployeeInterface
     /**
      * @inheritDoc
      */
-    public function getLastName() : string
+    public function getFirstName() : string
     {
-        return $this->lastName;
+        return $this->firstName;
     }
 
     /**

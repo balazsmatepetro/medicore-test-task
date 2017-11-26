@@ -15,7 +15,7 @@ use Medicore\Transport\Contract\TransportInterface;
  */
 class EmployeeTest extends TestCase
 {
-    const DATA_LAST_NAME = 'John';
+    const DATA_FIRST_NAME = 'John';
 
     const DATA_ONE_WAY_DISTANCE = 10;
 
@@ -26,17 +26,17 @@ class EmployeeTest extends TestCase
 
     protected function setUp()
     {
-        $this->employee = new Employee(self::DATA_LAST_NAME, new Bike, self::DATA_ONE_WAY_DISTANCE);
+        $this->employee = new Employee(self::DATA_FIRST_NAME, new Bike, self::DATA_ONE_WAY_DISTANCE);
     }
 
     /**
      * @expectedException InvalidArgumentException
-     * @expectedExceptionMessage The last name cannot be an empty string!
-     * @dataProvider dataProviderBlankLastName
+     * @expectedExceptionMessage The first name cannot be an empty string!
+     * @dataProvider dataProviderBlankFirstName
      */
-    public function testConstructShouldThrowExceptionWhenTheLastNameIsABlankString($lastName)
+    public function testConstructShouldThrowExceptionWhenTheFirstNameIsABlankString($firstName)
     {
-        new Employee($lastName, new Bike, 0);
+        new Employee($firstName, new Bike, 0);
     }
 
     /**
@@ -46,12 +46,12 @@ class EmployeeTest extends TestCase
      */
     public function testConstructShouldThrowExceptionWhenTheOneWayDistanceIsLessThanOne($oneWayDistance)
     {
-        new Employee(self::DATA_LAST_NAME, new Bike, $oneWayDistance);
+        new Employee(self::DATA_FIRST_NAME, new Bike, $oneWayDistance);
     }
 
-    public function testGetLastNameReturnsProperValue()
+    public function testGetFirstNameReturnsProperValue()
     {
-        $this->assertEquals(self::DATA_LAST_NAME, $this->employee->getLastName());
+        $this->assertEquals(self::DATA_FIRST_NAME, $this->employee->getFirstName());
     }
 
     public function testGetTransportReturnsProperValue()
@@ -67,7 +67,7 @@ class EmployeeTest extends TestCase
         $this->assertEquals(self::DATA_ONE_WAY_DISTANCE, $this->employee->getOneWayDistance());
     }
 
-    public function dataProviderBlankLastName()
+    public function dataProviderBlankFirstName()
     {
         return [
             [''],

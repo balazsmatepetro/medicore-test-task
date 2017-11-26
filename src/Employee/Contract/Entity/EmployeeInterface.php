@@ -14,11 +14,11 @@ use Medicore\Transport\Contract\TransportInterface;
 interface EmployeeInterface
 {
     /**
-     * Returns the last name of employee.
+     * Returns the first name of employee.
      *
      * @return string
      */
-    public function getLastName() : string;
+    public function getFirstName() : string;
 
     /**
      * Returns how the employee commutes to work.

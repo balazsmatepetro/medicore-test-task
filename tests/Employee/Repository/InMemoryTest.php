@@ -35,27 +35,27 @@ class InMemoryTest extends TestCase
             $this->assertInstanceOf(EmployeeInterface::class, $item);
         }
 
-        $this->assertEquals('Paul', $result[0]->getLastName());
+        $this->assertEquals('Paul', $result[0]->getFirstName());
         $this->assertInstanceOf(Transport\Car::class, $result[0]->getTransport());
         $this->assertEquals(60, $result[0]->getOneWayDistance());
 
-        $this->assertEquals('Martin', $result[1]->getLastName());
+        $this->assertEquals('Martin', $result[1]->getFirstName());
         $this->assertInstanceOf(Transport\Bus::class, $result[1]->getTransport());
         $this->assertEquals(8, $result[1]->getOneWayDistance());
 
-        $this->assertEquals('Jeroen', $result[2]->getLastName());
+        $this->assertEquals('Jeroen', $result[2]->getFirstName());
         $this->assertInstanceOf(Transport\Bike::class, $result[2]->getTransport());
         $this->assertEquals(9, $result[2]->getOneWayDistance());
 
-        $this->assertEquals('Tineke', $result[3]->getLastName());
+        $this->assertEquals('Tineke', $result[3]->getFirstName());
         $this->assertInstanceOf(Transport\Bike::class, $result[3]->getTransport());
         $this->assertEquals(4, $result[3]->getOneWayDistance());
 
-        $this->assertEquals('Arnout', $result[4]->getLastName());
+        $this->assertEquals('Arnout', $result[4]->getFirstName());
         $this->assertInstanceOf(Transport\Train::class, $result[4]->getTransport());
         $this->assertEquals(23, $result[4]->getOneWayDistance());
 
-        $this->assertEquals('Sander', $result[5]->getLastName());
+        $this->assertEquals('Sander', $result[5]->getFirstName());
         $this->assertInstanceOf(Transport\Bike::class, $result[5]->getTransport());
         $this->assertEquals(11, $result[5]->getOneWayDistance());
     }
