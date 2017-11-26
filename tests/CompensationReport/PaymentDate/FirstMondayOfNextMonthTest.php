@@ -8,7 +8,7 @@ use Medicore\CompensationReport\PaymentDate\FirstMondayOfNextMonth;
 
 /**
  * Description of FirstMondayOfNextMonthTest
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 class FirstMondayOfNextMonthTest extends TestCase

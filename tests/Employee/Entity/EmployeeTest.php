@@ -10,7 +10,7 @@ use Medicore\Transport\Contract\TransportInterface;
 
 /**
  * Description of EmployeeTest
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 class EmployeeTest extends TestCase

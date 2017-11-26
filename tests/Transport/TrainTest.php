@@ -10,7 +10,7 @@ use Medicore\Transport\Contract\TransportInterface;
 
 /**
  * Description of TrainTest
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 class TrainTest extends TestCase

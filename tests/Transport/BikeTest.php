@@ -9,7 +9,7 @@ use Medicore\Transport\Contract\TransportInterface;
 
 /**
  * Description of BikeTest
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 class BikeTest extends TestCase

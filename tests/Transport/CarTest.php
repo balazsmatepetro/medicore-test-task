@@ -9,7 +9,7 @@ use Medicore\Transport\Contract\TransportInterface;
 
 /**
  * Description of CarTest
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 class CarTest extends TestCase

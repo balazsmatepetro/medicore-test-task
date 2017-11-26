@@ -9,7 +9,7 @@ use Medicore\Transport;
 
 /**
  * Description of InMemoryTest
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 class InMemoryTest extends TestCase

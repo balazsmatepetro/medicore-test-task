@@ -11,7 +11,7 @@ use Medicore\Transport\Bus;
 
 /**
  * Description of ReportItemTest
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 class ReportItemTest extends TestCase

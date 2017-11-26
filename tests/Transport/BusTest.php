@@ -10,7 +10,7 @@ use Medicore\Transport\Contract\TransportInterface;
 
 /**
  * Description of BusTest
- * 
+ *
  * @author Balázs Máté Petró <petrobalazsmate@gmail.com>
  */
 class BusTest extends TestCase
