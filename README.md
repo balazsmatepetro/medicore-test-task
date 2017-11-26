@@ -1,3 +1,7 @@
+# Medicore Test Task
+
+## Requirements
+
 At Medicore we encourage a healthy lifestyle, therefore we encourage our employees to come to work by bike. If you would commute by bike you will get a compensation of € 0,50 per km per day. For distances between 5 to 10 km the compensation will even double! However, for distances over 10 km employees prefer a different way of commuting.
 
 Some employees commute by bus or train, for which the compensation is € 0,25 per km per day. If you would commute by car the compensation would be € 0,10 per km per day.
